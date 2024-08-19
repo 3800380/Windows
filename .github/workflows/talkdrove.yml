@@ -10,9 +10,11 @@ jobs:
     steps:
       - name: TalkDrove Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gm8kb0d6iw4jamycrj7c6/Downloads.bat?rlkey=m1yllwmjgo3oleyynfex0wf3v&st=9pqc6wpw&dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/5lhbbd3l2xuxloyxg0hwb/Downloads.bat?rlkey=jrt26tfl76zeq1ednf2h8lcan&st=j7pcb5lf&dl=1" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: TalkDrove login
         run: cmd /c show.bat
+      - name:   Timer
+        run: python time.py
 
